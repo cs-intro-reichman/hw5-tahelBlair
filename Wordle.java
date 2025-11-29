@@ -5,7 +5,7 @@ public class Wordle {
 		In in = new In(filename);
         String[] dictionary = new String[258];
         for (int i =0 ; i < 258; i++) {
-            dictionary[i] = in.readString();
+            dictionary[i] = in.readString().toUpperCase();
         }
         return dictionary;
     }
