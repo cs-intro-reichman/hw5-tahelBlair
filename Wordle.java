@@ -112,7 +112,7 @@ public class Wordle {
             // Loop until you read a valid guess
             while (!valid) {
                 System.out.print("Enter your guess (5-letter word): ");
-                guess = inp.readString();
+                guess = inp.readString().toUpperCase();
                 
                 if (guess.length() != 5) {
                     System.out.println("Invalid word. Please try again.");
