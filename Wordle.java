@@ -116,6 +116,7 @@ public class Wordle {
                 
                 if (guess.length() != 5) {
                     System.out.println("Invalid word. Please try again.");
+                    guess = inp.readString();
                 } else {
                     valid = true;
                 }
